@@ -2,6 +2,6 @@
 # This file is distinct from the CONTRIBUTORS.txt file.
 # See the latter for an explanation.
 #
-# Names should be added to this file as: Parin Rungpattarathakun (type.parin@gmail.com)
-# Name or Organization Cadson Demak (info@cadsondemak.com)
+#Names should be added to this file as: Parin Rungpattarathakun (type.parin@gmail.com)
+#Name or Organization Cadson Demak (info@cadsondemak.com)
 
