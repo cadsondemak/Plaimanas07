@@ -29,7 +29,7 @@ familyName: "Plaimanas07"
 buildVariable: false
 buildStatic: true
 buildTTF: true
-buildOTF: false
+buildOTF: true
 # buildSmallCap: false
 
 # The next flags control autohinting.
