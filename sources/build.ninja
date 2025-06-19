@@ -1,7 +1,7 @@
 # instantiateUfo: Create instance UFOs from a Glyphs or designspace file
 rule instantiateUfo
   command = $
-      /Users/parin/Documents/GitHub/Plai/Plaimanas07/venv/bin/python3.11 -m $
+      /Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11 -m $
       gftools.builder.jobrunner fontmake -i "$instance_name" -o ufo $
       $fontmake_type $in $args $stamp
   description = instantiateUfo
@@ -9,7 +9,7 @@ rule instantiateUfo
 # buildTTF: Build a TTF from a source file
 rule buildTTF
   command = $
-      /Users/parin/Documents/GitHub/Plai/Plaimanas07/venv/bin/python3.11 -m $
+      /Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11 -m $
       gftools.builder.jobrunner fontmake --output-path $out -o ttf $
       $fontmake_type $in $args $stamp
   description = buildTTF
@@ -17,21 +17,21 @@ rule buildTTF
 # autohint: Run gftools-autohint
 rule autohint
   command = $
-      /Users/parin/Documents/GitHub/Plai/Plaimanas07/venv/bin/python3.11 -m $
+      /Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11 -m $
       gftools.builder.jobrunner gftools-autohint $args -o $out $in $stamp
   description = autohint
 
 # fix: Run gftools-fix
 rule fix
   command = $
-      /Users/parin/Documents/GitHub/Plai/Plaimanas07/venv/bin/python3.11 -m $
+      /Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11 -m $
       gftools.builder.jobrunner gftools-fix-font -o $out $args $in $stamp
   description = fix
 
 # compress: Compress to webfont
 rule compress
   command = $
-      /Users/parin/Documents/GitHub/Plai/Plaimanas07/venv/bin/python3.11 -m $
+      /Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11 -m $
       gftools.builder.jobrunner fonttools ttLib.woff2 compress -o $out $in $
       $stamp
   description = compress
@@ -39,7 +39,7 @@ rule compress
 # buildOTF: Build a OTF from a source file
 rule buildOTF
   command = $
-      /Users/parin/Documents/GitHub/Plai/Plaimanas07/venv/bin/python3.11 -m $
+      /Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11 -m $
       gftools.builder.jobrunner fontmake --output-path $out -o otf $
       $fontmake_type $in $args $stamp
   description = buildOTF
@@ -47,7 +47,7 @@ rule buildOTF
 # copy: Copy a file
 rule copy
   command = $
-      /Users/parin/Documents/GitHub/Plai/Plaimanas07/venv/bin/python3.11 -m $
+      /Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11 -m $
       gftools.builder.jobrunner cp $in $out $stamp
   description = copy
 
@@ -75,66 +75,66 @@ build ../fonts/webfonts/Plaimanas07-Regular.woff2: compress $
 build ../fonts/webfonts/Plaimanas07-Italic.woff2: compress $
     ../fonts/ttf/Plaimanas07-Italic.ttf
   operation = compress
-# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp5p67glry
-build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp5p67glry: $
+# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpnk1fhzqu
+build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpnk1fhzqu: $
     buildTTF instance_ufos/Plaimanas07-Regular.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpf50ilim5
-build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpf50ilim5: $
+# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpf_sz8l5b
+build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpf_sz8l5b: $
     buildOTF instance_ufos/Plaimanas07-Regular.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpshd0p6dz
-build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpshd0p6dz: $
-    autohint /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp5p67glry
+# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpej7aet9f
+build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpej7aet9f: $
+    autohint /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpnk1fhzqu
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Plaimanas07-Regular.ttf
 build ../fonts/ttf/Plaimanas07-Regular.ttf: fix $
-    /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpshd0p6dz
+    /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpej7aet9f
   operation = fix
   args = 
 # Generating ../fonts/otf/Plaimanas07-Regular.otf
 build ../fonts/otf/Plaimanas07-Regular.otf: fix $
-    /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpf50ilim5
+    /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpf_sz8l5b
   operation = fix
   args = 
-# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpl5xj758n
-build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpl5xj758n: $
+# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpy0gy1xvb
+build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpy0gy1xvb: $
     buildTTF instance_ufos/Plaimanas07-Italic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpqo9axckc
-build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpqo9axckc: $
+# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp9cynjn3c
+build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp9cynjn3c: $
     buildOTF instance_ufos/Plaimanas07-Italic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpe2kkj2m5
-build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpe2kkj2m5: $
-    autohint /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpl5xj758n
+# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp4wn9enrd
+build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp4wn9enrd: $
+    autohint /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpy0gy1xvb
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Plaimanas07-Italic.ttf
 build ../fonts/ttf/Plaimanas07-Italic.ttf: fix $
-    /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpe2kkj2m5
+    /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp4wn9enrd
   operation = fix
   args = 
 # Generating ../fonts/otf/Plaimanas07-Italic.otf
 build ../fonts/otf/Plaimanas07-Italic.otf: fix $
-    /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpqo9axckc
+    /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp9cynjn3c
   operation = fix
   args = 
 default ../fonts/webfonts/Plaimanas07-Regular.woff2 $
