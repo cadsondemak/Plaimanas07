@@ -1,8 +1,5 @@
 {
 .appVersion = "3418";
-DisplayStrings = (
-"/maiHanaKat-thai"
-);
 classes = (
 {
 code = "maiHanaKat-thai maitaikhu-thai saraI-thai saraIi-thai saraUe-thai saraUee-thai nikhahit-thai yamakkan-thai nikhahit_maiEk-thai nikhahit_maiTho-thai nikhahit_maiTri-thai nikhahit_maiChattawa-thai\012";
@@ -62998,7 +62995,6 @@ instanceInterpolations = {
 "800CF2A0-134E-4EC9-907D-CE3650520B0A" = 1;
 };
 isItalic = 1;
-linkStyle = Regular;
 name = Italic;
 }
 );

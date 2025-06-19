@@ -75,66 +75,66 @@ build ../fonts/webfonts/Plaimanas07-Regular.woff2: compress $
 build ../fonts/webfonts/Plaimanas07-Italic.woff2: compress $
     ../fonts/ttf/Plaimanas07-Italic.ttf
   operation = compress
-# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpnk1fhzqu
-build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpnk1fhzqu: $
+# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmps30xzubz
+build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmps30xzubz: $
     buildTTF instance_ufos/Plaimanas07-Regular.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpf_sz8l5b
-build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpf_sz8l5b: $
+# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpgs2y05kr
+build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpgs2y05kr: $
     buildOTF instance_ufos/Plaimanas07-Regular.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpej7aet9f
-build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpej7aet9f: $
-    autohint /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpnk1fhzqu
+# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmplga3v8cm
+build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmplga3v8cm: $
+    autohint /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmps30xzubz
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Plaimanas07-Regular.ttf
 build ../fonts/ttf/Plaimanas07-Regular.ttf: fix $
-    /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpej7aet9f
+    /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmplga3v8cm
   operation = fix
   args = 
 # Generating ../fonts/otf/Plaimanas07-Regular.otf
 build ../fonts/otf/Plaimanas07-Regular.otf: fix $
-    /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpf_sz8l5b
+    /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpgs2y05kr
   operation = fix
   args = 
-# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpy0gy1xvb
-build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpy0gy1xvb: $
+# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp77etypd7
+build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp77etypd7: $
     buildTTF instance_ufos/Plaimanas07-Italic.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp9cynjn3c
-build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp9cynjn3c: $
+# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpfmlx3h2z
+build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpfmlx3h2z: $
     buildOTF instance_ufos/Plaimanas07-Italic.ufo.json
   operation = buildOTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
       DecomposeTransformedComponentsFilter
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp4wn9enrd
-build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp4wn9enrd: $
-    autohint /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpy0gy1xvb
+# Generating /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp7p63cmhb
+build /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp7p63cmhb: $
+    autohint /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp77etypd7
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Plaimanas07-Italic.ttf
 build ../fonts/ttf/Plaimanas07-Italic.ttf: fix $
-    /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp4wn9enrd
+    /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp7p63cmhb
   operation = fix
   args = 
 # Generating ../fonts/otf/Plaimanas07-Italic.otf
 build ../fonts/otf/Plaimanas07-Italic.otf: fix $
-    /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmp9cynjn3c
+    /var/folders/cn/52yg52sd1tq3q4cd09y5c4x40000gn/T/tmpfmlx3h2z
   operation = fix
   args = 
 default ../fonts/webfonts/Plaimanas07-Regular.woff2 $
