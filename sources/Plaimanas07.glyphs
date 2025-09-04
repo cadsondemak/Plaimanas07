@@ -50925,33 +50925,6 @@ rightMetricsKey = "=|";
 unicode = 002D;
 },
 {
-glyphname = softhyphen;
-lastChange = "2025-04-05 11:24:18 +0000";
-layers = (
-{
-background = {
-components = (
-{
-name = hyphen;
-}
-);
-};
-components = (
-{
-name = hyphen;
-}
-);
-layerId = "11FB3604-FD70-4670-A6A6-DB9438128FDF";
-width = 280;
-}
-);
-leftKerningGroup = hyphen;
-leftMetricsKey = hyphen;
-rightKerningGroup = hyphen;
-rightMetricsKey = hyphen;
-unicode = 00AD;
-},
-{
 glyphname = endash;
 lastChange = "2025-04-05 11:24:18 +0000";
 layers = (
@@ -51063,6 +51036,34 @@ width = 330;
 }
 );
 unicode = 005F;
+},
+{
+export = 0;
+glyphname = softhyphen;
+lastChange = "2025-09-04 15:59:31 +0000";
+layers = (
+{
+background = {
+components = (
+{
+name = hyphen;
+}
+);
+};
+components = (
+{
+name = hyphen;
+}
+);
+layerId = "11FB3604-FD70-4670-A6A6-DB9438128FDF";
+width = 280;
+}
+);
+leftKerningGroup = hyphen;
+leftMetricsKey = hyphen;
+rightKerningGroup = hyphen;
+rightMetricsKey = hyphen;
+unicode = 00AD;
 },
 {
 glyphname = parenleft;
