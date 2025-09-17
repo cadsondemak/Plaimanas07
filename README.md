@@ -1,4 +1,4 @@
-# My Font
+# Plaimanas07
 
 [![][Fontbakery]](https://cadsondemak.github.io/Plaimanas07.git/fontbakery/fontbakery-report.html)
 [![][Universal]](https://cadsondemak.github.io/Plaimanas07.git/fontbakery/fontbakery-report.html)
