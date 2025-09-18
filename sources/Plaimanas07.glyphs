@@ -1,5 +1,8 @@
 {
-.appVersion = "3425";
+.appVersion = "3428";
+DisplayStrings = (
+"/thoPhuthao-thai/toTao-thai"
+);
 classes = (
 {
 code = "maiHanaKat-thai maitaikhu-thai saraI-thai saraIi-thai saraUe-thai saraUee-thai nikhahit-thai yamakkan-thai nikhahit_maiEk-thai nikhahit_maiTho-thai nikhahit_maiTri-thai nikhahit_maiChattawa-thai\012";
@@ -13081,7 +13084,7 @@ unicode = 0E14;
 },
 {
 glyphname = "toTao-thai";
-lastChange = "2025-09-16 18:56:22 +0000";
+lastChange = "2025-09-18 09:41:00 +0000";
 layers = (
 {
 anchors = (
@@ -13092,13 +13095,6 @@ position = "{378, 0}";
 {
 name = top;
 position = "{383, 560}";
-}
-);
-hints = (
-{
-origin = "{0, 28}";
-type = Corner;
-name = _corner.leftSerif.001;
 }
 );
 layerId = "11FB3604-FD70-4670-A6A6-DB9438128FDF";
@@ -13134,7 +13130,11 @@ nodes = (
 "396 6 OFFCURVE",
 "378 21 OFFCURVE",
 "378 60 CURVE SMOOTH",
-"378 560 LINE",
+"378 500 LINE SMOOTH",
+"378 539 OFFCURVE",
+"396 554 OFFCURVE",
+"446 557 CURVE",
+"446 560 LINE",
 "328 560 LINE",
 "248 452 LINE",
 "185 565 LINE",
