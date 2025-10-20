@@ -1,3 +1,7 @@
+.ninja_log
+build.ninja
+*.ufo.json
+
 venv/
 # Development environments
 .vscode
