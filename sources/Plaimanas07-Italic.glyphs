@@ -1,5 +1,8 @@
 {
-.appVersion = "3425";
+.appVersion = "3431";
+DisplayStrings = (
+"/dottedCircle"
+);
 classes = (
 {
 code = "maiHanaKat-thai maitaikhu-thai saraI-thai saraIi-thai saraUe-thai saraUee-thai nikhahit-thai yamakkan-thai nikhahit_maiEk-thai nikhahit_maiTho-thai nikhahit_maiTri-thai nikhahit_maiChattawa-thai\012";
@@ -22413,8 +22416,23 @@ unicode = 2030;
 },
 {
 glyphname = dottedCircle;
+lastChange = "2025-10-20 08:15:27 +0000";
 layers = (
 {
+anchors = (
+{
+name = bottom;
+position = "{321, -7}";
+},
+{
+name = ogonek;
+position = "{465, -5}";
+},
+{
+name = top;
+position = "{399, 539}";
+}
+);
 hints = (
 {
 horizontal = 1;

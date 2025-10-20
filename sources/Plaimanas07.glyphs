@@ -1,7 +1,8 @@
 {
-.appVersion = "3428";
+.appVersion = "3431";
 DisplayStrings = (
-"/thoPhuthao-thai/toTao-thai"
+"/thoPhuthao-thai/toTao-thai",
+"/dottedCircle"
 );
 classes = (
 {
@@ -20423,9 +20424,23 @@ unicode = 2030;
 },
 {
 glyphname = dottedCircle;
-lastChange = "2025-09-16 19:14:44 +0000";
+lastChange = "2025-10-20 08:15:20 +0000";
 layers = (
 {
+anchors = (
+{
+name = bottom;
+position = "{309, 5}";
+},
+{
+name = ogonek;
+position = "{465, -5}";
+},
+{
+name = top;
+position = "{319, 539}";
+}
+);
 hints = (
 {
 horizontal = 1;
