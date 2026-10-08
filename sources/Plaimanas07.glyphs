@@ -1,8 +1,9 @@
 {
-.appVersion = "3431";
+.appVersion = "3532";
 DisplayStrings = (
 "/thoPhuthao-thai/toTao-thai",
-"/dottedCircle"
+"/dottedCircle",
+"/idotless i"
 );
 classes = (
 {
@@ -7896,7 +7897,7 @@ unicode = 0125;
 },
 {
 glyphname = idotless;
-lastChange = "2025-09-16 18:56:22 +0000";
+lastChange = "2026-10-08 16:11:19 +0000";
 layers = (
 {
 anchors = (
@@ -7913,26 +7914,16 @@ name = top;
 position = "{95, 500}";
 }
 );
-hints = (
-{
-origin = "{0, 0}";
-scale = "{1, -1}";
-type = Corner;
-name = _corner.rightSerif.001;
-options = 1;
-},
-{
-origin = "{0, 10}";
-type = Corner;
-name = _corner.leftSerif.001;
-}
-);
 layerId = "11FB3604-FD70-4670-A6A6-DB9438128FDF";
 paths = (
 {
 closed = 1;
 nodes = (
-"127 0 LINE",
+"191 0 LINE",
+"191 3 LINE",
+"144 6 OFFCURVE",
+"127 21 OFFCURVE",
+"127 60 CURVE SMOOTH",
 "127 508 LINE",
 "124 508 LINE",
 "99 480 OFFCURVE",
@@ -7942,7 +7933,11 @@ nodes = (
 "63 457 OFFCURVE",
 "77 442 OFFCURVE",
 "77 393 CURVE SMOOTH",
-"77 0 LINE"
+"77 60 LINE SMOOTH",
+"77 21 OFFCURVE",
+"59 6 OFFCURVE",
+"9 3 CURVE",
+"9 0 LINE"
 );
 }
 );
